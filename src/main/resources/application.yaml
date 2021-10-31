@@ -1,0 +1,12 @@
+serviceHost: "${ORDER_SERVICE_SERVICE_HOST:localhost}:${ORDER_SERVICE_SERVICE_PORT:8081}"
+
+
+pizza:
+  menu:
+    Veggie Pizza: 100
+    Pepperoni Pizza: 20
+    Meat Pizza: 70
+    Margherita Pizza: 13
+    BBQ Chicken Pizza: 12
+    Hawaiian Pizza: 90
+    Buffalo Pizza: 21
