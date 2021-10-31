@@ -1,20 +1,16 @@
-# order-generator
-
-
+## Running standalone instance(Not secured)
 To run microservice in stand-alone mode, run the following in project root(exposed calls, not secured):
 ```
 $ mvn spring-boot:run
 ```
 
 
-Push image to docker hub for image pull for istio service mesh setup(No calls exposed,secured)
-run the following code from root:
+## Running on istio service mesh(Secured)
+Follow the instruction [here](https://github.com/mrevanschan/pizza-istio-demo) if you want to use the docker image I prepared on my Docker Hub account, Otherwise prepare you own image by replace "evanschan" from the following code and run them from root directory:
 ```
 $ mvn clean package
 $ docker -t order-generator:latest .
 $ docker tag order-generator:lastest evanschan/order-generator
 $ docker push evanschan/order-generator
 ```
-
-
-note that I used my own Docker Hub repository for the istio service mesh image pull.
+After pushing the docker image to your own repository, follow the instructions here  [here](https://github.com/mrevanschan/pizza-istio-demo) to start the istio service mesh
