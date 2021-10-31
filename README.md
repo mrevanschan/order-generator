@@ -15,3 +15,6 @@ $ docker -t order-generator:latest .
 $ docker tag order-generator:lastest evanschan/order-generator
 $ docker push evanschan/order-generator
 ```
+
+
+note that I used my own Docker Hub repository for the istio service mesh image pull.
